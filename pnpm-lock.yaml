@@ -11,6 +11,12 @@ dependencies:
   commander:
     specifier: ^12.1.0
     version: 12.1.0
+  ftpkit:
+    specifier: ^0.0.4
+    version: 0.0.4
+  notikit:
+    specifier: ^0.0.6
+    version: 0.0.6
 
 devDependencies:
   '@babel/plugin-proposal-class-properties':
@@ -2182,6 +2188,11 @@ packages:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
     dev: true
 
+  /basic-ftp@5.0.5:
+    resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
+    engines: {node: '>=10.0.0'}
+    dev: false
+
   /binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
@@ -2359,7 +2370,6 @@ packages:
   /chalk@5.3.0:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
-    dev: true
 
   /chardet@0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
@@ -2908,6 +2918,18 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /ftpkit@0.0.4:
+    resolution: {integrity: sha512-fn0b+7YCWWdBNDJT7WZU880fsJjQ/jSAg4brNlJNPXfbI/8DslTjAJJORL7XyNtPK3Ojrk/RO90zdIODDFd74w==}
+    hasBin: true
+    dependencies:
+      axios: 1.7.2
+      basic-ftp: 5.0.5
+      chalk: 5.3.0
+      commander: 12.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
 
   /function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
@@ -3850,6 +3872,16 @@ packages:
     resolution: {integrity: sha512-IO9QvjUMWxPQQhs60oOu10CRkWCiZzSUkzbXGGV9pviYl1fXYcvkzQ5jV9z8Y6un8ARoVRl4EtC6v6jNqbaJ/w==}
     engines: {node: '>=14.16'}
     dev: true
+
+  /notikit@0.0.6:
+    resolution: {integrity: sha512-W1Yl5x8bk/hV0clLpEolyJtF9xWl2Es2mM0wUTTut+L49ipJhcfkfNrIFNkflW0Rvb+8X+RmaPUV8loAoLhNZA==}
+    hasBin: true
+    dependencies:
+      axios: 1.7.2
+      commander: 12.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
 
   /np@10.0.7(typescript@5.5.4):
     resolution: {integrity: sha512-vIPKQwOYKpQU40PU5x/vLfN2haj8ObxMvR1QGt7EZnBPWdm4WEbHdumYAnMV7AeR9kACsMqcqAP37sAo5cW5jA==}

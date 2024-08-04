@@ -1,14 +1,18 @@
 import { Command } from "commander";
-import { YourAction } from "./index";
+import { Options, PublishAction } from "./index";
 const pkg = require("../package.json");
 const program = new Command();
 
 program
   .version(pkg.version)
-  .description("xxx - A command line tool for xxx.")
-  .action(async (options: any) => {
-    // write your code here
-    new YourAction(options).doSomething();
+  .description("mcp - A command line tool for publish.")
+  .option(
+    "-c, --configPath <configPath>",
+    "json config file path",
+    "./config.json"
+  )
+  .action(async (options: Options) => {
+    new PublishAction(options).execute();
   });
 
 program.parse(process.argv);

@@ -1,12 +1,12 @@
 {
-  "name": "your-library-name",
+  "name": "mc-pub",
   "version": "0.0.1",
-  "description": "Your library description",
+  "description": "mc publish",
   "main": "dist/library.umd.js",
   "module": "dist/library.es.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "your-cli-command": "dist/cli.js"
+    "mcp": "dist/cli.js"
   },
   "scripts": {
     "build": "rollup -c && tsup && tsc --emitDeclarationOnly",
@@ -30,7 +30,9 @@
   },
   "dependencies": {
     "axios": "^1.7.2",
-    "commander": "^12.1.0"
+    "commander": "^12.1.0",
+    "ftpkit": "^0.0.4",
+    "notikit": "^0.0.6"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",
