@@ -1,6 +1,6 @@
 {
   "name": "mc-pub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mc publish",
   "main": "dist/library.umd.js",
   "module": "dist/library.es.js",
