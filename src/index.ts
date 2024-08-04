@@ -18,7 +18,7 @@ export class PublishAction {
     const configContent = await fs.readFile(configPath, "utf-8");
     const config = JSON.parse(configContent);
 
-    const env = process.env.BUILD_ENV_VALUE;
+    const env = process.env.BUILD_ENV;
 
     if (!env) {
       throw new Error("BUILD_ENV is required");
