@@ -31,7 +31,7 @@
   "dependencies": {
     "axios": "^1.7.2",
     "commander": "^12.1.0",
-    "ftpkit": "^0.0.4",
+    "ftpkit": "^0.0.5",
     "notikit": "^0.0.6"
   },
   "devDependencies": {

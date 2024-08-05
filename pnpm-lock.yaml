@@ -12,8 +12,8 @@ dependencies:
     specifier: ^12.1.0
     version: 12.1.0
   ftpkit:
-    specifier: ^0.0.4
-    version: 0.0.4
+    specifier: ^0.0.5
+    version: 0.0.5
   notikit:
     specifier: ^0.0.6
     version: 0.0.6
@@ -2919,8 +2919,8 @@ packages:
     dev: true
     optional: true
 
-  /ftpkit@0.0.4:
-    resolution: {integrity: sha512-fn0b+7YCWWdBNDJT7WZU880fsJjQ/jSAg4brNlJNPXfbI/8DslTjAJJORL7XyNtPK3Ojrk/RO90zdIODDFd74w==}
+  /ftpkit@0.0.5:
+    resolution: {integrity: sha512-AVJ4c+4Gi0DlkGNUwKMYGAfOv6T/IPx4i3DWVGkGYe0cpMXz9R4nGq5r53xzB11En+PvFozMGQir54MOgUNmKQ==}
     hasBin: true
     dependencies:
       axios: 1.7.2
